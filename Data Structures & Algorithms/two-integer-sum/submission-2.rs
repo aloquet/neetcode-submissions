@@ -4,6 +4,8 @@ impl Solution {
         // double boucle for une pour i et lautre pour faire la somme avec le meme tab comme j
         // et verif si egal à target.
         // bien penser à continue si indice égaux
+
+        //time O(n²) space:0(1)
         for i in 0..nums.len(){
             for j in 0..nums.len(){
                 if i == j { continue };
@@ -13,12 +15,7 @@ impl Solution {
             };
         };
         return vec![0, 0]
-        // for i in 0..nums.len(){
-        //     let diff = target - nums[i];
-        //     let ind : Vec<usize> = nums.iter().enumerate().filter_map(|(idx, &x)| if i!=idx && x == diff { Some(idx)} else {None} ).collect();
-        //     return vec![i as i32, ind[0] as i32]
-        // }
-        // return vec![0,0]
+
 
     }
 }
